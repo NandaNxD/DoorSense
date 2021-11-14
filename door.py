@@ -37,5 +37,17 @@ if __name__=="__main__":
     ECHO=27
     GPIO.setup(TRIG,GPIO.OUT)
     GPIO.setup(ECHO,GPIO.IN)
-    doorDist=getDistance(TRIG,ECHO)
     
+    try:
+        while(True):
+            doorDist=getDistance(TRIG,ECHO)
+            slot=db.collection('DoorDistance').document('1')
+            slot.set({
+                'distance':doorDist,  
+            })
+    except KeyboardInterrupt:
+        print("Exit")
+
+    
+
+      
