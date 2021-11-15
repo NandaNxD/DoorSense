@@ -9,14 +9,13 @@ GPIO.setwarnings(False)
 
 
 def getDistance(TRIG,ECHO):
-    print('Distance measurement in Progress')
-    GPIO.output(TRIG,False)
-    print('Waiting for sensor to settle')
-    time.sleep(1)
+    #print('Distance measurement in Progress')
+    #GPIO.output(TRIG,False)
+    
     GPIO.output(TRIG,True)
-    time.sleep(0.00001)
+    time.sleep(0.0001)
     GPIO.output(TRIG,False)
-
+    pulse_start=0
     while GPIO.input(ECHO)==0:
         pulse_start=time.time()
         
@@ -34,14 +33,13 @@ if __name__=="__main__":
     firebase_admin.initialize_app(cred)
     db = firestore.client()
     TRIG=4
-    ECHO=27
+    ECHO=26
     GPIO.setup(TRIG,GPIO.OUT)
     GPIO.setup(ECHO,GPIO.IN)
-    
+    slot=db.collection('DoorDistance').document('1')
     try:
         while(True):
             doorDist=getDistance(TRIG,ECHO)
-            slot=db.collection('DoorDistance').document('1')
             slot.set({
                 'distance':doorDist,  
             })
