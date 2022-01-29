@@ -6,8 +6,8 @@ class Camera:
     IMAGE_NAME = 'image'
     camera = 1
 
-    def __init__(self, PATH_TO_IMAGE):
-        self.PATH_TO_IMAGE = PATH_TO_IMAGE
+    def __init__(self, IMAGE_NAME):
+        self.IMAGE_NAME = IMAGE_NAME
         self.camera = PiCamera()
         self.camera.rotation = 180
     def __init(self):
