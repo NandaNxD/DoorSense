@@ -3,7 +3,7 @@ import os
 
 
 class Camera:
-    IMAGE_NAME = 'image'
+    IMAGE_NAME = 'image.jpeg'
     camera = 1
 
     def __init__(self, IMAGE_NAME):
