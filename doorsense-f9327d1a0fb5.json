@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "doorsense",
+  "private_key_id": "f9327d1a0fb54f0524cd40df412fb8f737245d26",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAmbTZCC704g7w\nuFwHIq1svLKGrQkXWyQWWLCf5TbhJEhHeOYv0c+QIcgAhJ9UEwM76Gd46i/29vIb\npQQ7N24IDGDxaEpgejzAB1/a+NLNUtgD9D75W1qomQ5dikA7Mg4nNO8n3JlyIjuy\nivcALuZM6sI0AsCdFIVTdwdXfz8ntK9ZRt9p/xuBJRdjEuajzofyc9+og+JdKbo6\n7uA2c/3MNw/RbVVSCbBXu8SOJ422jYtGVwFxrWNGwcKKpLi2E/K75f6sxw5cSXSJ\n/iX4/N0EX5y2nZzSbYoIyWIkdv0PtzIGBdzvfEpUwGfrtsknQRn7nIXPxDsFyRZz\nlM573GB5AgMBAAECggEAOjw/moAG8rSHn/GeoemyVnaX5HDdltpQBxG6Fh7QgTLf\nR/0eXMcr44DTYJS5OEqnZ63V25Gz/xCcFA/JP7563qQfi97k3lcXl1ijeypRUxQB\njPCFOhCNUP02gsISudNgxCoVRhBFtWT0d//cv4luyUMShXdvlg9mYN5UsfgfuHk7\nXRO7vWGpMDE59/b1GegxsAQ5hJQoF1ynwJTdkKs1TcFsxYp2JU4AkyvrPMVW722w\nq4z7rZ7/KJaQW/5XWXS65DGKgcbjtqpDUyQdHGtmjBrT+Wnk9PTD0ARvixedGcS5\nqeM7NEWSqmhDDl4UJb4B3U247NdflHl03JN5vwVEoQKBgQDihZEqGU9acjTd9pQ6\nEW8vx4BETve59W+JTDbFDoOf2QETn9n7O+eXHAX3Y2FFv03J6iNNu5bcrGrjV4xP\nuXMEx2iFTS0HCqoK2llqOU+P9C4lVOtnfCwhs7g9X+vtP/+CkYioZWipVaTEnFFT\np2nKvzPe9hu5HTxJVdwnFEDsWwKBgQDZqhIyWvOskimo0hOj+4PiWFl9rX+XkLI+\nnEn1QhOixO0XFAb0L4EAhGk9MMLtDxA2cMyRXXtVnrWh4Sepr+O9yBhp7mobMZwu\n6bvhdwPEcJoObP0oo78SfURpS6I1uSnX/In0d+B75NGr5+1vqZEjrrhbrlmybv78\nlF0bVQROuwKBgEJgaT0w1XPna15vVtf9K9uQViGuEiFHrjtJPfNYYXGBoTMi8DkS\nQLai24y2blaFzEGSfm3UvkxDqb6cdN0XtoB7/kCxcLRTh6hOe00JJitEnhEKZUCZ\nvkTR6PbzGKsYycJ06tqNfLHCCtoiBCLDN9jVVlnLPCxuSLAknLJG2Q9pAoGAcIYT\nUiTiw9vr3XJ85NEppOG3odkHlPsgqm1xbnDyZbsYNk4MKkBEmFfbb969Zn/bCcnW\nd2+0Stb5Xu5e6sIbIglHVbwC7nv/GeGLV0uHjw4HFl4RoejE5nIL48NN4CgREa9k\nQhWW33WzTwNfI9KtTZ0NgZfolu36s+ifGXoh9/ECgYEA2MoTcLJbc0d7a4rp6cTr\nEDGpOIrdFuMC6DjNg5V+VazFj91JSBAcWdnzwOGb7egLbtc7ZjZ7YzBhhP40dAsx\nfZl5o619/7DXzWQI+TT/xs/IywrPK3EJdu0U8Jb7QqTn8d9w/nq+WeGAfx3VSnnj\n8VOggpEPIE5zfV5u/pNErYQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "doorsense@appspot.gserviceaccount.com",
+  "client_id": "113191292552203781212",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/doorsense%40appspot.gserviceaccount.com"
+}
