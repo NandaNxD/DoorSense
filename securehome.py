@@ -22,10 +22,16 @@ class Pir:
 if __name__=="__main__":
     GPIO.setmode(GPIO.BCM)
     GPIO.setwarnings(False)
+    '''
     cred = credentials.Certificate('doorsense-f9327d1a0fb5.json')
     firebase_admin.initialize_app(cred)
     db = firestore.client()
-    MotionSensor=Pir(4)
+    '''
+    IMAGE_NAME = 'image'
+    cam=Camera(PATH_TO_IMAGE)
+    cam.capture()
+    
+    '''MotionSensor=Pir(4)
     motion=0
     slot=db.collection('SecureHome').document('1')
     try:
@@ -38,6 +44,6 @@ if __name__=="__main__":
     except KeyboardInterrupt:
         print("Exit")
 
-    
+    '''
 
       
