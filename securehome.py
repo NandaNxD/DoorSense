@@ -37,11 +37,10 @@ if __name__=="__main__":
     cam=Camera(IMAGE_NAME)
     
     bucket = storage.bucket()
-    blob=bucket.blob('image.jpg')
+    blob=bucket.blob('image.jpeg')
     
     MotionSensor=Pir(4)
     motion=0
-    blob.upload_from_filename('image.jpg')
     #blob.download_to_filename('image.jpg')
     slot=db.collection('SecureHome').document('1')
     try:
@@ -54,7 +53,7 @@ if __name__=="__main__":
             slot.set({
                 'Motion':motion  
             })
-            time.sleep(1)
+            time.sleep(4)
     except KeyboardInterrupt:
         print("Exit")
 
