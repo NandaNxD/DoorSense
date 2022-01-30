@@ -17,6 +17,7 @@ class Camera:
     def __init(self):
         self.camera=PiCamera()
         self.camera.rotation=180
+        self.camera.resolution=(self.Height,self.Width)
         
     def __init(self,IMAGE_NAME):
         self.IMAGE_NAME = IMAGE_NAME
