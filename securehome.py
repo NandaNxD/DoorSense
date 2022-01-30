@@ -29,7 +29,7 @@ if __name__=="__main__":
     cred = credentials.Certificate('doorsense-f9327d1a0fb5.json')
     
     firebase_admin.initialize_app(cred, {
-    'storageBucket': 'doorsense.appspot.com/SecureHome'
+    'storageBucket': 'doorsense.appspot.com'
     })
 
     db = firestore.client()
@@ -37,11 +37,12 @@ if __name__=="__main__":
     cam=Camera(IMAGE_NAME)
     
     bucket = storage.bucket()
-    blob=bucket.blob('image')
+    blob=bucket.blob('image.jpg')
     
     MotionSensor=Pir(4)
     motion=0
-    
+    blob.upload_from_filename('image.jpg')
+    #blob.download_to_filename('image.jpg')
     slot=db.collection('SecureHome').document('1')
     try:
         while(True):
