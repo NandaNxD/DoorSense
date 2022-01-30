@@ -34,7 +34,7 @@ if __name__=="__main__":
 
     db = firestore.client()
     IMAGE_NAME = 'image.jpeg'
-    cam=Camera(IMAGE_NAME)
+    cam=Camera(IMAGE_NAME,500,500)
     
     bucket = storage.bucket()
     blob=bucket.blob('image.jpeg')
