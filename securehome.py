@@ -34,7 +34,7 @@ if __name__=="__main__":
 
     db = firestore.client()
     IMAGE_NAME = 'image.jpeg'
-    cam=Camera(IMAGE_NAME,500,500)
+    cam=Camera(IMAGE_NAME,100,100)
     
     bucket = storage.bucket()
     blob=bucket.blob('image.jpeg')
@@ -43,17 +43,21 @@ if __name__=="__main__":
     motion=0
     #blob.download_to_filename('image.jpg')
     slot=db.collection('SecureHome').document('1')
+    
     try:
         while(True):
             motion=MotionSensor.detectMotion()
+            slot.update({
+                'Motion':motion  
+            })
             if(motion==1):
+                print('Motion')
+                h_w=slot.get().to_dict()['res']
+                cam.setResolution(h_w,h_w)                
                 cam.capture()
                 blob.upload_from_filename('image.jpeg')
 
-            slot.set({
-                'Motion':motion  
-            })
-            time.sleep(4)
+            time.sleep(2)
     except KeyboardInterrupt:
         print("Exit")
 

@@ -30,3 +30,6 @@ class Camera:
 
     def capure(self,OUTPUT):
         self.camera.capture(output=OUTPUT,format='jpeg')
+        
+    def setResolution(self,HEIGHT,WIDTH):
+        self.camera.resolution=(HEIGHT,WIDTH)        
